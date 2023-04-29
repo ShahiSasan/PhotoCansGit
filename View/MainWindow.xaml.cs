@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhotoCansGit.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,10 +20,16 @@ namespace PhotoCansGit
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    { MainVM mainVM;
         public MainWindow()
         {
             InitializeComponent();
+           
+        }
+
+        private void loadedgr(object sender, RoutedEventArgs e)
+        {
+            this.DataContext = mainVM = new MainVM(Vw3D) { };
         }
     }
 }

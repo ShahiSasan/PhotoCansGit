@@ -1,0 +1,23 @@
+﻿<Window x:Class="PhotoCansGit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhotoCansGit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Black" Loaded="loadedgr">
+        <Viewport3D  x:Name="Vw3D" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Viewport3D.Camera>
+                <PerspectiveCamera  Position="400,225,100">
+                    
+                </PerspectiveCamera>
+            </Viewport3D.Camera>
+            <ModelVisual3D >
+                <ModelVisual3D.Content>
+                    <AmbientLight Color="YellowGreen" ></AmbientLight>
+                </ModelVisual3D.Content>
+            </ModelVisual3D>
+        </Viewport3D>
+    </Grid>
+</Window>
